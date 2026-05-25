@@ -71,22 +71,3 @@ If you believe an accepted decision should change:
 
 Never silently edit an accepted ADR to change its outcome — the history of
 *why* we changed our mind is as important as the decision itself.
-
-## Tooling
-
-This site is built with [Sphinx](https://www.sphinx-doc.org) using the
-`sphinx_rtd_theme`. To build and preview locally:
-
-```bash
-# First time only
-make install
-
-# Build HTML
-make build
-
-# Preview at http://localhost:8000
-make run
-```
-
-The site is automatically deployed to GitHub Pages on every push to `main`
-via `.github/workflows/docs.yml`.
