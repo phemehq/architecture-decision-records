@@ -1,0 +1,424 @@
+/* ============================================================
+   PhemeHQ ADR — Cilium-matched theme override for sphinx_rtd_theme
+   Colors match sphinx-rtd-theme-cilium fork:
+     Sidebar bg:   #232730  (Cilium-exact dark charcoal)
+     Accent/teal:  #1abc9c
+     Link hover:   #16a085
+     Nested bg:    #2a2e38 / #313640
+   ============================================================ */
+
+/* -- Sidebar ------------------------------------------------- */
+
+.wy-nav-side {
+    background: #232730;
+}
+
+/* -- Hide expand/collapse buttons (matches Cilium clean sidebar) -- */
+
+button.toctree-expand {
+    display: none !important;
+}
+
+/* Spacing between nav items */
+.wy-menu-vertical li.toctree-l1 a {
+    padding: 0.55em 1.618em !important;
+}
+
+.wy-menu-vertical li.toctree-l2 a {
+    padding: 0.4em 1.618em 0.4em 2.427em !important;
+}
+
+.wy-menu-vertical li.toctree-l3 a {
+    padding: 0.35em 1.618em 0.35em 3.236em !important;
+}
+
+/* Extra top margin on each caption to visually separate sections */
+.wy-menu-vertical p.caption {
+    margin-top: 0.8em !important;
+}
+
+.wy-menu-vertical p.caption:first-child {
+    margin-top: 0 !important;
+}
+
+.wy-side-nav-search {
+    background-color: #1abc9c;
+}
+
+.wy-side-nav-search > a,
+.wy-side-nav-search .wy-dropdown > a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.wy-side-nav-search > a:hover,
+.wy-side-nav-search .wy-dropdown > a:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+.wy-side-nav-search input[type=text] {
+    border-color: #16a085;
+    background: rgba(0,0,0,0.15);
+    color: #fff;
+}
+
+.wy-side-nav-search input[type=text]::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+.wy-side-nav-search input[type=text]:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+/* -- Sidebar navigation -------------------------------------- */
+
+.wy-menu-vertical a {
+    color: #d9d9d9;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #2e3340;
+    color: #1abc9c;
+}
+
+/* Section caption labels (e.g. "How We Work", "Decisions") */
+.wy-menu-vertical p.caption {
+    color: #808080;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 14px 1.618em 4px;
+    margin: 0;
+    background: #232730;
+    position: relative;
+    z-index: 2;
+}
+
+.wy-menu-vertical p.caption > span {
+    color: #808080;
+}
+
+/* Current / active item */
+.wy-menu-vertical li.current > a {
+    background: #2e3340;
+    color: #d9d9d9;
+    border-right: 3px solid #1abc9c;
+}
+
+.wy-menu-vertical li.current > a:hover {
+    background: #353b49;
+}
+
+.wy-menu-vertical .toctree-l1.current > a {
+    border-right: 3px solid #1abc9c;
+}
+
+/* Nested level 2 */
+.wy-menu-vertical li.toctree-l2 a {
+    background: #2a2e38;
+    color: #b0b8c4;
+}
+
+.wy-menu-vertical li.toctree-l2 a:hover {
+    background: #2e3340;
+    color: #1abc9c;
+}
+
+.wy-menu-vertical li.toctree-l2.current > a {
+    background: #353b49;
+    color: #1abc9c;
+    border-right: 3px solid #1abc9c;
+}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
+    background: #2e3340;
+    color: #a0a8b4;
+}
+
+/* Nested level 3 */
+.wy-menu-vertical li.toctree-l3 a {
+    background: #2e3340;
+    color: #a0a8b4;
+}
+
+.wy-menu-vertical li.toctree-l3 a:hover {
+    background: #353b49;
+    color: #1abc9c;
+}
+
+.wy-menu-vertical li.toctree-l3.current > a {
+    background: #353b49;
+    color: #1abc9c;
+}
+
+/* Expand/collapse caret */
+.wy-menu-vertical .toctree-expand {
+    color: #808080;
+}
+
+.wy-menu-vertical a:hover .toctree-expand,
+.wy-menu-vertical li.current > a .toctree-expand {
+    color: #1abc9c;
+}
+
+/* -- Mobile top bar ------------------------------------------ */
+
+.wy-nav-top {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.wy-nav-top a {
+    color: #fff;
+}
+
+.wy-nav-top i {
+    color: #fff;
+}
+
+/* -- Content area -------------------------------------------- */
+
+.wy-nav-content-wrap {
+    background: #fcfcfc;
+}
+
+.wy-nav-content {
+    background: #ffffff;
+    max-width: 860px;
+}
+
+/* -- Links --------------------------------------------------- */
+
+a,
+.rst-content a {
+    color: #1abc9c;
+}
+
+a:hover,
+.rst-content a:hover {
+    color: #16a085;
+}
+
+.wy-breadcrumbs a {
+    color: #1abc9c;
+}
+
+.wy-breadcrumbs-aside a {
+    color: #1abc9c;
+}
+
+/* -- Headings ------------------------------------------------ */
+
+.rst-content h1,
+.rst-content h2,
+.rst-content h3,
+.rst-content h4,
+.rst-content h5,
+.rst-content h6 {
+    color: #404040;
+}
+
+.rst-content h1 {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 0.4em;
+    font-size: 2rem;
+}
+
+.rst-content h2 {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 0.3em;
+}
+
+/* -- Inline code --------------------------------------------- */
+
+.rst-content code.literal,
+.rst-content tt.literal {
+    color: #e74c3c;
+    background: #f8f8f8;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 0 4px;
+    font-size: 0.9em;
+}
+
+/* -- Code blocks --------------------------------------------- */
+
+.highlight pre {
+    font-size: 0.875rem;
+    line-height: 1.55;
+}
+
+div[class^="highlight"] {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+
+/* Copy button */
+button.copybtn {
+    background: transparent;
+    border: 1px solid #1abc9c;
+    color: #1abc9c;
+    border-radius: 3px;
+}
+
+button.copybtn:hover {
+    background: #1abc9c;
+    color: #fff;
+}
+
+/* -- Admonition boxes ---------------------------------------- */
+
+.rst-content .admonition {
+    border-radius: 4px;
+}
+
+.rst-content .note .admonition-title,
+.rst-content .seealso .admonition-title {
+    background: #1abc9c;
+}
+
+.rst-content .note,
+.rst-content .seealso {
+    background: #f4fcfb;
+    border-color: #1abc9c;
+}
+
+.rst-content .warning .admonition-title {
+    background: #e67e22;
+}
+
+.rst-content .warning {
+    background: #fef9f4;
+    border-color: #e67e22;
+}
+
+.rst-content .important .admonition-title,
+.rst-content .tip .admonition-title {
+    background: #27ae60;
+}
+
+.rst-content .important,
+.rst-content .tip {
+    background: #f4fdf7;
+    border-color: #27ae60;
+}
+
+.rst-content .caution .admonition-title {
+    background: #e74c3c;
+}
+
+.rst-content .caution {
+    background: #fdf4f4;
+    border-color: #e74c3c;
+}
+
+/* -- Tables -------------------------------------------------- */
+
+.rst-content table.docutils thead {
+    background: #2b303b;
+}
+
+.rst-content table.docutils thead th {
+    color: #fff;
+    border-color: #2e3340;
+    padding: 8px 12px;
+}
+
+.rst-content table.docutils td {
+    border-color: #e8e8e8;
+    padding: 8px 12px;
+}
+
+.rst-content table.docutils tr:nth-child(even) td {
+    background: #f9f9f9;
+}
+
+/* -- Version panel (RTD version selector) -------------------- */
+
+.rst-versions {
+    background: #1b1e26;
+    border-top: solid 1px #2e3340;
+}
+
+.rst-versions .rst-current-version {
+    background: #1b1e26;
+    color: #9b9b9b;
+    border-top: 1px solid #2e3340;
+}
+
+.rst-versions .rst-current-version .fa {
+    color: #1abc9c;
+}
+
+.rst-versions .rst-current-version span {
+    color: #1abc9c;
+}
+
+.rst-versions .rst-other-versions {
+    background: #232730;
+    color: #9b9b9b;
+}
+
+.rst-versions .rst-other-versions a {
+    color: #1abc9c;
+}
+
+.rst-versions .rst-other-versions dl dt {
+    color: #d9d9d9;
+}
+
+/* -- Sidebar scrollbar --------------------------------------- */
+
+.wy-nav-side::-webkit-scrollbar {
+    width: 5px;
+}
+
+.wy-nav-side::-webkit-scrollbar-track {
+    background: #232730;
+}
+
+.wy-nav-side::-webkit-scrollbar-thumb {
+    background: #1abc9c;
+    border-radius: 3px;
+}
+
+/* -- Logo ---------------------------------------------------- */
+
+.wy-side-nav-search > a img.logo {
+    max-width: 130px;
+    margin: 4px auto 8px;
+    display: block;
+}
+
+/* -- Prev / Next navigation ---------------------------------- */
+
+.rst-content .prev-next-area {
+    border-top: 1px solid #e8e8e8;
+    padding-top: 1.2em;
+    margin-top: 2em;
+}
+
+.prev-next-area a {
+    color: #1abc9c;
+}
+
+.prev-next-area a:hover {
+    color: #16a085;
+}
+
+/* -- Tabs (sphinx-tabs) -------------------------------------- */
+
+.sphinx-tabs-tab[aria-selected="true"] {
+    color: #1abc9c;
+    border-bottom-color: #1abc9c;
+}
+
+/* -- Responsive ---------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .wy-nav-content {
+        padding: 1.618em 1em;
+    }
+}
