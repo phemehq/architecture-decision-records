@@ -32,13 +32,21 @@ button.toctree-expand {
     padding: 0.35em 1.618em 0.35em 3.236em !important;
 }
 
-/* Extra top margin on each caption to visually separate sections */
+/* Collapse default ul margin so sections sit flush */
+.wy-menu-vertical ul {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Small separator above each section caption */
 .wy-menu-vertical p.caption {
-    margin-top: 0.8em !important;
+    margin-top: 0.4em !important;
+    padding-top: 0.6em !important;
 }
 
 .wy-menu-vertical p.caption:first-child {
     margin-top: 0 !important;
+    padding-top: 0.4em !important;
 }
 
 .wy-side-nav-search {

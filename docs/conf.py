@@ -36,7 +36,7 @@ html_baseurl = 'https://phemehq.github.io/architecture-decision-records/'
 
 html_theme_options = {
     'logo_only': True,
-    'navigation_depth': 4,
+    'navigation_depth': 1,
     'collapse_navigation': False,
     'sticky_navigation': True,
     'includehidden': True,
