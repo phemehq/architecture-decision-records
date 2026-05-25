@@ -3,7 +3,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 project = 'PhemeHQ ADR'
-copyright = '2025, PhemeHQ Authors'
+copyright = '2026, PhemeHQ Authors'
 author = 'PhemeHQ Authors'
 release = '1.0'
 version = '1.0'
