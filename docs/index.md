@@ -1,7 +1,5 @@
 # PhemeHQ Architecture Decision Records
 
-![PhemeHQ](_static/logo.png)
-
 This repository is the single source of truth for **architecture decisions** made
 across PhemeHQ projects. Every significant technical choice — a language, a protocol,
 a data model, a vendor — is documented here as an Architecture Decision Record (ADR)
